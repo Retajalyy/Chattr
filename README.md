@@ -27,3 +27,8 @@ To set up the Chattr project locally, follow these steps:
    ```bash
    git clone https://github.com/retajalyy/Chattr.git
 
+##Navigate to the project directory:
+
+bash
+Copy code
+cd Chattr
