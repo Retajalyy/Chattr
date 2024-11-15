@@ -1,3 +1,4 @@
 # Chattr
-![Chattr Logo](Chattrlogo.png)
+![Chattr Logo](./ChattrLogo.png)
+
 
