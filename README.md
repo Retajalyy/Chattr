@@ -19,6 +19,20 @@ Chattr is built using the following technologies:
 - **Database**: MongoDB
 - **Cloud Deployment**: Docker, AWS (or other cloud providers)
 
+##  Architecture Overview
+The Chattr application is designed with a modular, microservices-inspired architecture to ensure scalability and maintainability:
+
+Frontend: Built with React, the frontend communicates with the backend via RESTful APIs and handles real-time events 
+
+Backend: A Python-based REST API serves as the core of the application. Using a framework like Flask or FastAPI, it handles user authentication, message storage.
+
+Database: MongoDB is used for data storage, offering a flexible schema for storing user and message data.
+
+Real-time Communication: Socket.IO enables real-time message exchange between clients, making conversations instantaneous.
+
+Cloud Deployment: Chattr is containerized with Docker and can be deployed on a Kubernetes cluster for scalability and load balancing.
+
+
 ## Setup Instructions
 
 To set up the Chattr project locally, follow these steps:
@@ -39,17 +53,3 @@ Copy code
 npm start
 Open your browser and go to http://localhost:3000 to access Chattr.
 
-Architecture Overview
-The Chattr application is designed with a modular, microservices-inspired architecture to ensure scalability and maintainability:
-
-Frontend: Built with React, the frontend communicates with the backend via RESTful APIs and handles real-time events using Socket.IO for instant updates.
-
-Backend: A Node.js and Express-based REST API serves as the core of the application, handling user authentication, message storage, and Socket.IO connections for real-time messaging.
-
-Database: MongoDB is used for data storage, offering a flexible schema for storing user and message data.
-
-Authentication: Secure authentication using JWT ensures that only authorized users can access certain features.
-
-Real-time Communication: Socket.IO enables real-time message exchange between clients, making conversations instantaneous.
-
-Cloud Deployment: Chattr is containerized with Docker and can be deployed on a Kubernetes cluster for scalability and load balancing.
